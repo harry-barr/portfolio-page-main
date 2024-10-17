@@ -26,6 +26,7 @@ body {
   top: 0px;
   gap: 350px;
   background: rgb(30, 30, 30);
+  z-index: 100;
 }
 #header .title-div {
   margin-top: 10px;
@@ -112,5 +113,65 @@ h2 {
   margin-bottom: 200px;
 }
 #portfolio-section .portfolio-container h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.gallery {
+  width: 80vw;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  padding: 50px;
+  flex: none;
+}
+.gallery div img {
+  width: 500px;
+  height: 300px;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#backBtn,
+#nextBtn {
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 5px solid purple;
+  border-radius: 10px;
+}
+
+/*
+
+  SKILLS SECTION STYLES
+
+*/
+
+#skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#skills-section .skills-container {
+  margin-bottom: 200px;
+}
+#skills-section .skills-container h1 {
+  font-size: 3rem;
 }
