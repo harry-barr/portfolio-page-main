@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: rgb(30, 30, 30);
+}
+
+/* 
+
+    HEADER STYLES
+
+*/
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 3px solid purple;
+  position: sticky;
+  top: 0px;
+  gap: 350px;
+  background: rgb(30, 30, 30);
+}
+#header .title-div {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 1.5rem;
+}
+#header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
+}
+
+#header .nav-bar .nav-btn {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+#header .nav-bar .nav-btn:hover {
+  border-bottom: 5px solid white;
+}
+#header .nav-bar .nav-btn.contact {
+  border: 4px solid rgba(128, 0, 128, 0.671);
+  padding: 15px;
+  border-radius: 100px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-weight: 700;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#header .nav-bar .nav-btn.contact:hover {
+  box-shadow: 0 0 10px 4px purple;
+}
+
+/* 
+
+    ABOUT SECTION STYLES
+
+*/
+#about-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+#about-section .about-container {
+  margin-left: 50px;
+}
+#about-section .bio-container h1,
+h2 {
+  font-size: 6rem;
+}
+#about-section .bio-container #contact {
+  border: 4px solid rgba(128, 0, 128, 0.671);
+  padding: 15px;
+  border-radius: 100px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  font-weight: 700;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#about-section .bio-container #contact:hover {
+  box-shadow: 0 0 10px 4px purple;
+}
+
+/* 
+
+    PORTFOLIO SECTION STYLES
+
+*/
+
+#portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+#portfolio-section .portfolio-container h1 {
+  font-size: 2.5rem;
+}
