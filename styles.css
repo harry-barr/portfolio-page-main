@@ -21,6 +21,7 @@ body {
   align-items: center;
   width: 100%;
   padding-bottom: 10px;
+  border-top: 3px solid purple;
   border-bottom: 3px solid purple;
   position: sticky;
   top: 0px;
@@ -86,14 +87,16 @@ h2 {
 }
 #about-section .bio-container #contact {
   border: 4px solid rgba(128, 0, 128, 0.671);
-  padding: 15px;
+  padding: 25px;
   border-radius: 100px;
   background-color: rgb(30, 30, 30);
   color: white;
   font-weight: 700;
+  font-size: 1.5rem;
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 #about-section .bio-container #contact:hover {
   box-shadow: 0 0 10px 4px purple;
@@ -110,17 +113,25 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+}
+#portfolio-section .portfolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 #portfolio-section .portfolio-container h1 {
   font-size: 3rem;
-  text-align: center;
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
   margin-bottom: 50px;
 }
 .gallery {
   width: 80vw;
   display: flex;
   overflow-x: scroll;
+  gap: 310px;
 }
 .gallery div {
   width: 100%;
@@ -143,12 +154,13 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 #backBtn,
 #nextBtn {
-  width: 50px;
+  font-size: 3rem;
   cursor: pointer;
-  margin: 40px;
+  color: purple;
 }
 .gallery div img:hover {
   filter: grayscale(0);
@@ -168,10 +180,179 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #skills-section .skills-container {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
-#skills-section .skills-container h1 {
+#skills-section .skills-title {
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+}
+#skills-section h1 {
   font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.skills-container .current-skills {
+  width: 70vw;
+  height: 600px;
+  background: rgba(30, 30, 30, 0.372);
+  border-radius: 50px;
+  border: 3px solid purple;
+}
+.skills-container .current-skills h1,
+.skills-container .learning h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.8rem !important;
+}
+.skills-container .learning {
+  width: 70vw;
+  height: 450px;
+  background: rgba(30, 30, 30, 0.372);
+  border-radius: 50px;
+  border: 3px solid purple;
+}
+.skills-items i,
+.learning-items i {
+  font-size: 7rem;
+}
+.skills-items,
+.learning-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.skills-div {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  align-items: center;
+}
+.skills-div .fa-js {
+  color: #f7df1e;
+}
+.skills-div .fa-html5 {
+  color: #e34c26;
+}
+.skills-div .fa-css3-alt {
+  color: #264de4;
+}
+.skills-div .fa-php {
+  color: #8993be;
+}
+.skills-div .fa-react {
+  color: #61dbfb;
+}
+.skills-desc h4 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/*
+
+  STYLES FOR CONTACT SECTION
+
+*/
+
+#contact-section h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+#contact-section {
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactPageTitle {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.worksDesc {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem;
+  max-width: 45rem;
+}
+
+.contactDesc {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+  text-align: center; /* Center the description text */
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  margin: 1rem auto; /* Center the form within its container */
+  width: 90vw;
+  max-width: 60rem;
+}
+
+.name,
+.email,
+.msg {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 2rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+  background: transparent;
+  color: white;
+  border: 3px solid purple;
+  padding: 1.5rem;
+  border-radius: 40px;
+  margin: 1.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.submitBtn:hover {
+  border: 3px solid white;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.link {
+  object-fit: cover;
+  font-size: 3rem;
+  margin: 0 0.75rem;
+  color: purple;
+  cursor: pointer;
 }

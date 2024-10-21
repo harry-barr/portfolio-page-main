@@ -54,28 +54,142 @@
     </section>
     <section id="portfolio-section">
       <div class="portfolio-container">
-        <h1>My Portfolio</h1>
+        <h1 class="portfolio-title">My Portfolio</h1>
         <div class="gallery-wrap">
-          <img src="./images/back.png" id="backBtn" />
+          <i class="fa-solid fa-arrow-left" id="backBtn"></i>
           <div class="gallery">
             <div>
               <span><img src="./images/crypto-tracker.png" /></span>
-              <span><img src="./images/image-2.png" /></span>
-              <span><img src="./images/image-3.png" /></span>
+              <span><img src="./images/news-app.png" /></span>
+              <span><img src="./images/legal-w.png" /></span>
             </div>
             <div>
-              <span><img src="./images/image-4.png" /></span>
-              <span><img src="./images/image-5.png" /></span>
-              <span><img src="./images/image-6.png" /></span>
+              <span><img src="./images/currency-c.png" /></span>
+              <span><img src="./images/speech-c.png" /></span>
+              <span><img src="./images/tip-converter.png" /></span>
+            </div>
+            <div>
+              <span><img src="./images/qr-code.png" /></span>
+              <span><img src="./images/password-g.png" /></span>
+              <span><img src="./images/quote.png" /></span>
             </div>
           </div>
-          <img src="./images/next.png" id="nextBtn" />
+          <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
         </div>
       </div>
     </section>
     <section id="skills-section">
+      <h1 class="skills-title">My Skills</h1>
       <div class="skills-container">
-        <h1>My Skills</h1>
+        <div class="current-skills">
+          <h1>Technologies I am proficient in</h1>
+          <div class="skills-items">
+            <div class="skills-div">
+              <i class="fa-brands fa-js"></i>
+              <div class="skills-desc">
+                <h4>JAVASCRIPT</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  ab quisquam fuga incidunt rerum quia nam.<br />
+                  Obcaecati inventore corporis quia expedita culpa enim minus
+                  maiores, aut quibusdam perspiciatis est ut.
+                </p>
+              </div>
+            </div>
+            <div class="skills-div">
+              <i class="fa-brands fa-html5"></i>
+              <div class="skills-desc">
+                <h4>HTML</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  ab quisquam fuga incidunt rerum quia nam.<br />
+                  Obcaecati inventore corporis quia expedita culpa enim minus
+                  maiores, aut quibusdam perspiciatis est ut.
+                </p>
+              </div>
+            </div>
+            <div class="skills-div">
+              <i class="fa-brands fa-css3-alt"></i>
+              <div class="skills-desc">
+                <h4>CSS</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  ab quisquam fuga incidunt rerum quia nam.<br />
+                  Obcaecati inventore corporis quia expedita culpa enim minus
+                  maiores, aut quibusdam perspiciatis est ut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="learning">
+          <h1>Technologies I am learning</h1>
+          <div class="learning-items">
+            <div class="skills-div">
+              <div class="skills-desc">
+                <h4>PHP & MySQL</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  ab quisquam fuga incidunt rerum quia nam.<br />
+                  Obcaecati inventore corporis quia expedita culpa enim minus
+                  maiores, aut quibusdam perspiciatis est ut.
+                </p>
+              </div>
+              <i class="fa-brands fa-php"></i>
+            </div>
+            <div class="skills-div">
+              <div class="skills-desc">
+                <h4>REACT</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  ab quisquam fuga incidunt rerum quia nam.<br />
+                  Obcaecati inventore corporis quia expedita culpa enim minus
+                  maiores, aut quibusdam perspiciatis est ut.
+                </p>
+              </div>
+              <i class="fa-brands fa-react"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div id="contact">
+        <h1 class="contactPageTitle">
+          Contact Me
+          <span class="contactDesc">
+            Please fill out the form below to discuss any work opportunities.
+          </span>
+        </h1>
+        <form class="contactForm" ref="{form}" onSubmit="{sendEmail}">
+          <input
+            type="text"
+            class="name"
+            placeholder="Your name"
+            name="from_name"
+            required
+          />
+          <input
+            type="email"
+            class="email"
+            placeholder="Your email"
+            name="from_email"
+            required
+          />
+          <textarea
+            name="message"
+            class="msg"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" value="send" class="submitBtn">Submit</button>
+          <div class="links">
+            <i class="fa-brands fa-github link" alt="github"></i>
+            <i class="fa-brands fa-linkedin link" alt="linkedin"></i>
+            <i class="fa-brands fa-facebook link" alt="facebook"></i>
+          </div>
+        </form>
       </div>
     </section>
     <script src="carousel.js" type="module"></script>
