@@ -45,6 +45,7 @@ html {
   margin-top: 10px;
   margin-left: 15px;
   font-size: 1.3rem;
+  display: inline;
   animation: fadeIn 1s;
 }
 #header .nav-bar {
@@ -125,7 +126,7 @@ html {
   margin-left: 50px;
 }
 #about-section .bio-container h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 #about-section .bio-container p {
   font-size: 1.2rem;
