@@ -42,8 +42,6 @@ html {
   z-index: 100;
 }
 #header .title-div {
-  display: flex;
-  flex-direction: row;
   margin-top: 10px;
   margin-left: 15px;
   font-size: 1.5rem;
