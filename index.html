@@ -20,7 +20,7 @@
   <body>
     <header id="header">
       <div class="title-div">
-        <h1>Harry's Page</h1>
+        <h1>Harry <i class="fa-solid fa-code"></i></h1>
       </div>
       <nav class="nav-bar">
         <button class="nav-btn" id="about">About</button>
@@ -29,151 +29,225 @@
         <button class="nav-btn contact" id="contact">Contact</button>
       </nav>
     </header>
+
     <section id="about-section">
+      <div class="canvas-container">
+        <canvas id="about-canvas"></canvas>
+      </div>
       <div class="about-container">
         <div class="bio-container">
-          <h1>Hello,</h1>
+          <h2>Hello, I'm Harry</h2>
           <h2>Welcome to my page</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-            <br />
-            totam qui assumenda similique est incidunt animi illum officia
-            <br />
-            asperiores. Vero rem ducimus dolorum quam. Nam et necessitatibus
-            minus laborum. Delectus?
-            <br />
-            adipisicing elit. Tenetur ex, quaerat, fugit quidem in magni, earum
-            voluptatibus iure commodi natus <br />
-            sapiente repellat odit possimus maxime rem? Nobis aspernatur
-            molestias veritatis!
+            I am a programmer proficient in JavaScript, HTML, CSS, and Git. I am
+            passionate about creating stylish and functional websites, and I
+            love to learn new things about technology. Take a look at my
+            portfolio below to learn more about my projects. Here are links to
+            my <a>CV</a> and
+            <a href="https://github.com/harry-barr" target="_blank">GitHub</a>.
           </p>
-          <button id="contact">Contact</button>
+          <button class="nav-btn contact" id="contact">Contact</button>
         </div>
       </div>
       <div class="image-container"></div>
     </section>
+    <!-- <div class="divider-div">
+      <hr class="divider" />
+    </div> -->
     <section id="portfolio-section">
       <div class="portfolio-container">
-        <h1 class="portfolio-title">My Portfolio</h1>
+        <h2 class="portfolio-title">My Portfolio</h2>
+        <div class="filter-div">
+          Filter by:
+          <select>
+            <option value=""></option>
+            <option value="react">REACT</option>
+            <option value="fetch">Asynchronous Programming</option>
+            <option value="oop">OOP</option>
+            <option value="php">PHP</option>
+            <option value="misc">Misc</option>
+          </select>
+        </div>
         <div class="gallery-wrap">
           <i class="fa-solid fa-arrow-left" id="backBtn"></i>
           <div class="gallery">
             <div>
-              <span><img src="./images/crypto-tracker.png" /></span>
-              <span><img src="./images/news-app.png" /></span>
-              <span><img src="./images/legal-w.png" /></span>
+              <span
+                ><img
+                  src="./images/food-delivery.png"
+                  class="project"
+                  id="Food Delivery App"
+                  data-tag="react"
+              /></span>
+              <span
+                ><img
+                  src="./images/crypto-tracker.png"
+                  class="project"
+                  id="Cryptocurrency Price Tracker"
+                  data-tag="fetch"
+              /></span>
+              <span
+                ><img
+                  src="./images/news-app.png"
+                  class="project"
+                  id="News App"
+                  data-tag="fetch"
+              /></span>
             </div>
             <div>
-              <span><img src="./images/currency-c.png" /></span>
-              <span><img src="./images/speech-c.png" /></span>
-              <span><img src="./images/tip-converter.png" /></span>
+              <span
+                ><img
+                  src="./images/currency-c.png"
+                  class="project"
+                  id="Currency Converter"
+                  data-tag="fetch"
+              /></span>
+              <span
+                ><img
+                  src="./images/speech-c.png"
+                  class="project"
+                  id="Text-to-speech Converter"
+                  data-tag="misc"
+              /></span>
+              <span
+                ><img
+                  src="./images/tip-converter.png"
+                  class="project"
+                  id="Tip Calculator"
+                  data-tag="misc"
+              /></span>
             </div>
             <div>
-              <span><img src="./images/qr-code.png" /></span>
-              <span><img src="./images/password-g.png" /></span>
-              <span><img src="./images/quote.png" /></span>
+              <span
+                ><img
+                  src="./images/qr-code.png"
+                  class="project"
+                  id="QR Code Generator"
+                  data-tag="misc"
+              /></span>
+              <span
+                ><img
+                  src="./images/password-g.png"
+                  class="project"
+                  id="Password Generator"
+                  data-tag="misc"
+              /></span>
+              <span
+                ><img
+                  src="./images/quote.png"
+                  class="project"
+                  id="Random Quote Generator"
+                  data-tag="misc"
+              /></span>
+            </div>
+            <div>
+              <span
+                ><img
+                  src="./images/legal-w.png"
+                  class="project"
+                  id="Legal Site"
+                  data-tag="react"
+              /></span>
+              <span
+                ><img
+                  src="./images/noughts-and-crosses.png"
+                  class="project"
+                  id="Noughts and crosses in react"
+                  data-tag="react"
+              /></span>
             </div>
           </div>
           <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
         </div>
+        <div class="project-desc"></div>
       </div>
     </section>
+    <div class="divider-div-sub">
+      <hr class="divider" />
+    </div>
+
     <section id="skills-section">
-      <h1 class="skills-title">My Skills</h1>
-      <div class="skills-container">
-        <div class="current-skills">
-          <h1>Technologies I am proficient in</h1>
-          <div class="skills-items">
-            <div class="skills-div">
-              <i class="fa-brands fa-js"></i>
-              <div class="skills-desc">
-                <h4>JAVASCRIPT</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  ab quisquam fuga incidunt rerum quia nam.<br />
-                  Obcaecati inventore corporis quia expedita culpa enim minus
-                  maiores, aut quibusdam perspiciatis est ut.
-                </p>
-              </div>
-            </div>
-            <div class="skills-div">
-              <i class="fa-brands fa-html5"></i>
-              <div class="skills-desc">
-                <h4>HTML</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  ab quisquam fuga incidunt rerum quia nam.<br />
-                  Obcaecati inventore corporis quia expedita culpa enim minus
-                  maiores, aut quibusdam perspiciatis est ut.
-                </p>
-              </div>
-            </div>
-            <div class="skills-div">
-              <i class="fa-brands fa-css3-alt"></i>
-              <div class="skills-desc">
-                <h4>CSS</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  ab quisquam fuga incidunt rerum quia nam.<br />
-                  Obcaecati inventore corporis quia expedita culpa enim minus
-                  maiores, aut quibusdam perspiciatis est ut.
-                </p>
-              </div>
-            </div>
+      <span class="skillsTitle">What I do</span>
+      <span class="skillDesc">
+        I am a passionate web designer who loves to create, learn, and explore
+        new opportunities. I am proficient in HTML, CSS, JavaScript, and React.
+      </span>
+      <div class="skillBars">
+        <div class="skillBar">
+          <i class="fa-brands fa-js skillsImg"></i>
+          <div class="skillBarText">
+            <h2>Javascript</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
           </div>
         </div>
-        <div class="learning">
-          <h1>Technologies I am learning</h1>
-          <div class="learning-items">
-            <div class="skills-div">
-              <div class="skills-desc">
-                <h4>PHP & MySQL</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  ab quisquam fuga incidunt rerum quia nam.<br />
-                  Obcaecati inventore corporis quia expedita culpa enim minus
-                  maiores, aut quibusdam perspiciatis est ut.
-                </p>
-              </div>
-              <i class="fa-brands fa-php"></i>
-            </div>
-            <div class="skills-div">
-              <div class="skills-desc">
-                <h4>REACT</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  ab quisquam fuga incidunt rerum quia nam.<br />
-                  Obcaecati inventore corporis quia expedita culpa enim minus
-                  maiores, aut quibusdam perspiciatis est ut.
-                </p>
-              </div>
-              <i class="fa-brands fa-react"></i>
-            </div>
+        <div class="skillBar">
+          <i class="fa-brands fa-html5 skillsImg"></i>
+          <div class="skillBarText">
+            <h2>HTML</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </div>
+        <div class="skillBar">
+          <i class="fa-brands fa-css3-alt skillsImg"></i>
+          <div class="skillBarText">
+            <h2>CSS</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+        </div>
+        <div class="skillBar">
+          <i class="fa-brands fa-react skillsImg"></i>
+          <div class="skillBarText">
+            <h2>React</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <div class="divider-div-sub">
+      <hr class="divider" />
+    </div>
     <section id="contact-section">
       <div id="contact">
-        <h1 class="contactPageTitle">
+        <h2 class="contactPageTitle">
           Contact Me
-          <span class="contactDesc">
+          <p class="contactDesc">
             Please fill out the form below to discuss any work opportunities.
-          </span>
-        </h1>
-        <form class="contactForm" ref="{form}" onSubmit="{sendEmail}">
+          </p>
+        </h2>
+        <form class="contactForm">
+          <input
+            type="hidden"
+            name="access_key"
+            value="ac5f2980-3505-4a40-965a-035dd5a8430c"
+          />
           <input
             type="text"
             class="name"
             placeholder="Your name"
-            name="from_name"
+            name="name"
             required
           />
           <input
             type="email"
             class="email"
             placeholder="Your email"
-            name="from_email"
+            name="email"
             required
           />
           <textarea
@@ -183,15 +257,26 @@
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" value="send" class="submitBtn">Submit</button>
-          <div class="links">
-            <i class="fa-brands fa-github link" alt="github"></i>
-            <i class="fa-brands fa-linkedin link" alt="linkedin"></i>
-            <i class="fa-brands fa-facebook link" alt="facebook"></i>
-          </div>
+          <button type="submit" class="submitBtn">Submit</button>
+          <div id="result"></div>
         </form>
       </div>
     </section>
+    <footer>
+      <div class="contact-info">
+        <p>Email: harrybarr530@gmail.com</p>
+        <p>Phone: +447453510943</p>
+      </div>
+      <div class="links">
+        <a href="https://github.com/harry-barr"
+          ><i class="fa-brands fa-github link" alt="github"></i
+        ></a>
+        <i class="fa-brands fa-linkedin link" alt="linkedin"></i>
+      </div>
+    </footer>
     <script src="carousel.js" type="module"></script>
+    <script src="contact.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+    <script src="canvas.js" type="module"></script>
   </body>
 </html>
