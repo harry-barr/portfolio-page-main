@@ -36,14 +36,14 @@ html {
   padding-bottom: 15px;
   border-bottom: 3px solid purple;
   position: sticky;
+  justify-content: space-around;
   top: 0px;
-  gap: 350px;
   background: rgb(30, 30, 30);
   z-index: 100;
 }
 #header .title-div {
   margin-top: 10px;
-  margin-left: 15px;
+
   font-size: 1.3rem;
   display: inline;
   animation: fadeIn 1s;
@@ -51,7 +51,7 @@ html {
 #header .nav-bar {
   display: flex;
   flex-direction: row;
-  gap: 180px;
+  gap: 100px;
 }
 
 #header .nav-bar .nav-btn {
