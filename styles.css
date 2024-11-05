@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 html {
-  scroll-padding-top: 150px;
+  scroll-padding-top: 110px;
 }
 @keyframes fadeIn {
   0% {
@@ -71,7 +71,7 @@ html {
 #header .nav-bar .nav-btn.contact,
 #about-section .bio-container #contact,
 .submitBtn {
-  padding: 20px;
+  padding: 12px;
   background-color: rgb(47, 43, 43);
   color: #f0f0f0;
   cursor: pointer;
@@ -192,8 +192,6 @@ html {
 }
 #portfolio-section .portfolio-container h2 {
   font-size: 3rem;
-  border-bottom: 3px solid white;
-  padding-bottom: 10px;
   margin-bottom: 90px;
 }
 #portfolio-section .portfolio-container p {
@@ -205,12 +203,12 @@ html {
   width: 80vw;
   display: flex;
   overflow-x: scroll;
-  gap: 310px;
+  gap: 320px;
 }
 .gallery div {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 30px;
   padding: 50px;
   flex: none;
@@ -287,7 +285,7 @@ html {
 }
 
 .skillsTitle {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 1.5rem;
@@ -303,6 +301,9 @@ html {
 }
 .fa-react {
   color: #61dbfb;
+}
+.fa-git-alt {
+  color: #f1502f;
 }
 .skillDesc {
   font-weight: 400;
@@ -333,11 +334,12 @@ html {
   margin-right: 2rem;
 }
 .skillBarText h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  padding-bottom: 10px;
 }
 
 .skillBarText p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
@@ -365,9 +367,11 @@ html {
 
 */
 
-#contact-section h2 {
+.contactPageTitle h2 {
   text-align: center;
   font-size: 3rem;
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
 }
 #contact-section {
   width: 100vw;
@@ -460,7 +464,7 @@ html {
 footer {
   background-color: rgb(50, 50, 50);
   width: 100%;
-  height: 150px;
+  height: 120px;
   border-top: 2px solid white;
   display: flex;
   justify-content: space-around;
@@ -469,10 +473,10 @@ footer .contact-info {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-top: 35px;
+  margin-top: 30px;
   margin-left: 15px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 footer .links {
-  margin-top: 50px;
+  margin-top: 40px;
 }
