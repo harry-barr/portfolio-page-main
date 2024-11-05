@@ -203,7 +203,7 @@ html {
   width: 80vw;
   display: flex;
   overflow-x: scroll;
-  gap: 320px;
+  gap: 560px;
 }
 .gallery div {
   width: 100%;
