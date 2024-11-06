@@ -500,6 +500,15 @@ footer .links {
   #header .nav-bar .nav-btn {
     font-size: 15px;
   }
+  .canvas-container {
+    display: none;
+  }
+  .canvas-container #about-canvas {
+    display: none;
+  }
+  .gallery {
+    gap: 850px;
+  }
 }
 @media (max-width: 750px) {
   #about-section .bio-container h2 {
@@ -514,5 +523,8 @@ footer .links {
   }
   .gallery div img {
     width: 450px;
+  }
+  .gallery {
+    gap: 1000px;
   }
 }
