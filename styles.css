@@ -527,4 +527,7 @@ footer .links {
   .gallery {
     gap: 1000px;
   }
+  .nav-btn .contact {
+    display: none;
+  }
 }
