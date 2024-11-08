@@ -15,8 +15,6 @@ addEventListener("mousemove", (event) => {
 });
 addEventListener("resize", () => {
   canvas.width = innerWidth;
-
-  init();
 });
 
 // HELPER FUNCTIONS

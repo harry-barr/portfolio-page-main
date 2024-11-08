@@ -500,12 +500,7 @@ footer .links {
   #header .nav-bar .nav-btn {
     font-size: 15px;
   }
-  .canvas-container {
-    display: none;
-  }
-  .canvas-container #about-canvas {
-    display: none;
-  }
+
   .gallery {
     gap: 850px;
   }
@@ -527,7 +522,62 @@ footer .links {
   .gallery {
     gap: 1000px;
   }
-  .nav-btn .contact {
+  .nav-btn.contact.navbar {
+    display: none !important;
+  }
+  #header .title-div {
+    font-size: 10px;
+    margin-right: 30px;
+  }
+  .filter-div {
+    top: 75px;
+  }
+  .filter-div select {
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .canvas-container {
     display: none;
+  }
+  .canvas-container #about-canvas {
+    display: none;
+  }
+}
+/* Mobile adjustments for `.gallery` and `.nav-bar` gaps */
+@media screen and (max-width: 480px) {
+  .gallery {
+    gap: 20px;
+  }
+  #header .nav-bar {
+    gap: 20px;
+  }
+  .filter-div {
+    left: 10px;
+  }
+  #about-section .about-container {
+    margin-left: 0;
+  }
+  .divider,
+  .divider-div,
+  #skills-section,
+  #contact-section {
+    width: 100%;
+  }
+  .name,
+  .email,
+  .msg {
+    padding: 10px;
+  }
+  .contactPageTitle {
+    font-size: 30px;
+  }
+  .contactDesc {
+    font-size: 15px;
+  }
+  .submitBtn {
+    font-size: 20px;
+    padding: 15px;
   }
 }
