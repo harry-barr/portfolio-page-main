@@ -193,11 +193,7 @@ html {
   font-size: 50px;
   margin-bottom: 90px;
 }
-#portfolio-section .portfolio-container p {
-  font-size: 1.3rem;
-  margin: 0 150px 20px;
-  text-align: center;
-}
+
 .gallery {
   width: 80vw;
   display: flex;
@@ -252,19 +248,19 @@ html {
 }
 
 .project-desc h3 {
-  font-size: 2rem;
+  font-size: 30px;
 }
 
 .filter-div {
   position: absolute;
   top: 110px;
   left: 120px;
-  font-size: 2rem;
+  font-size: 30px;
 }
 .filter-div select {
   padding: 10px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 600;
 }
 /*
@@ -474,7 +470,7 @@ footer .contact-info {
   gap: 5px;
   margin-top: 30px;
   margin-left: 15px;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 footer .links {
   margin-top: 40px;
@@ -520,7 +516,7 @@ footer .links {
     width: 450px;
   }
   .gallery {
-    gap: 1000px;
+    gap: 20px;
   }
   .nav-btn.contact.navbar {
     display: none !important;
@@ -545,8 +541,25 @@ footer .links {
     display: none;
   }
 }
-/* Mobile adjustments for `.gallery` and `.nav-bar` gaps */
+/* Mobile adjustments for .gallery and .nav-bar gaps */
 @media screen and (max-width: 480px) {
+  #about-section {
+    margin-top: 0px;
+  }
+  #about-section .bio-container h2 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #about-section .bio-container p {
+    font-size: 15px;
+    margin-left: 10px;
+    line-height: normal;
+  }
+  #about-section .nav-btn.contact {
+    padding: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
   .gallery {
     gap: 20px;
   }
@@ -565,10 +578,32 @@ footer .links {
   #contact-section {
     width: 100%;
   }
+  .gallery div img {
+    width: 300px;
+    height: 200px;
+  }
+
   .name,
   .email,
   .msg {
     padding: 10px;
+  }
+  #portfolio-section {
+    margin-bottom: 0;
+  }
+  #portfolio-section .portfolio-container h2 {
+    font-size: 25px;
+    margin-bottom: 90px;
+  }
+  #backBtn,
+  #nextBtn {
+    font-size: 20px;
+  }
+  .gallery .one span,
+  .gallery .two span,
+  .gallery .three span,
+  .gallery .four span {
+    margin-right: 30px;
   }
   .contactPageTitle {
     font-size: 30px;
@@ -577,7 +612,67 @@ footer .links {
     font-size: 15px;
   }
   .submitBtn {
-    font-size: 20px;
-    padding: 15px;
+    font-size: 15px;
+    padding: 10px;
   }
+  footer .contact-info {
+    font-size: 10px;
+  }
+  footer .links i {
+    font-size: 30px;
+  }
+  footer .links {
+    margin-top: 30px;
+  }
+  .filter-div {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    font-size: 15px;
+  }
+  .filter-div select {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .skillsTitle {
+    font-size: 30px;
+  }
+  .skillDesc {
+    font-size: 15px;
+  }
+  .skillBar {
+    position: relative;
+  }
+  .skillBar i {
+    position: absolute;
+    font-size: 35px;
+    right: 2px;
+    top: -15px;
+  }
+}
+/* Ensure all sections don’t exceed 100% width */
+#portfolio-section,
+#contact-section,
+footer {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Set `width: 100%` instead of 100vw for consistency in mobile view */
+.divider,
+.divider-div,
+.divider-div-sub {
+  width: 100%;
+}
+
+/* Reduce gap and padding adjustments for mobile */
+.gallery {
+  gap: 20px;
+  padding: 0 10px;
 }

@@ -39,10 +39,7 @@ projects.forEach((project) => {
 const originalGalleryContent = gallery.innerHTML;
 
 const filterProjects = (elementTag) => {
-  if (selectElement.value === "") {
-    gallery.innerHTML = originalGalleryContent;
-    return;
-  } else if (selectElement.value === elementTag) {
+  if (selectElement.value === elementTag) {
     gallery.innerHTML = ""; // Clear the gallery
     gallery.insertAdjacentHTML("beforeend", "<div class='gallery-div'></div>"); // Add a new div container
 
@@ -58,7 +55,9 @@ const filterProjects = (elementTag) => {
     galleryDiv.insertAdjacentHTML("beforeend", projectHTML);
   }
 };
-
+window.addEventListener("load", () => {
+  filterProjects(selectElement.value);
+});
 selectElement.addEventListener("change", () =>
   filterProjects(selectElement.value)
 );
