@@ -37,37 +37,42 @@ projects.forEach((project) => {
 });
 
 const originalGalleryContent = gallery.innerHTML;
-
 const filterProjects = (elementTag) => {
   if (selectElement.value === elementTag) {
     gallery.innerHTML = ""; // Clear the gallery
     gallery.insertAdjacentHTML("beforeend", "<div class='gallery-div'></div>"); // Add a new div container
 
     const galleryDiv = document.querySelector(".gallery-div");
-    const reactArr = projectArray.filter(
-      (project) => project.dataset.tag == elementTag
+    const filteredProjects = projectArray.filter(
+      (project) => project.dataset.tag === elementTag
     );
 
-    // Map to get HTML of each filtered element
-    const projectHTML = reactArr.map((project) => project.outerHTML).join("");
-
     // Insert the HTML of filtered projects into galleryDiv
-    galleryDiv.insertAdjacentHTML("beforeend", projectHTML);
+    filteredProjects.forEach((project) => {
+      galleryDiv.insertAdjacentHTML("beforeend", project.outerHTML);
+    });
+
+    // Re-select projects and add hover event listeners after filtering
+    const updatedProjects = galleryDiv.querySelectorAll(".project");
+    updatedProjects.forEach((project) => {
+      project.addEventListener("mouseover", (e) => {
+        projectDescDiv.innerHTML = "";
+        const projectName = e.currentTarget.id || "Project";
+        projectDescDiv.insertAdjacentHTML(
+          "beforeend",
+          `<h3>${projectName}</h3>`
+        );
+      });
+      project.addEventListener("mouseout", () => {
+        projectDescDiv.innerHTML = ""; // Clear the content or set it back to default
+      });
+    });
   }
 };
+
 window.addEventListener("load", () => {
   filterProjects(selectElement.value);
 });
 selectElement.addEventListener("change", () =>
   filterProjects(selectElement.value)
 );
-projects.forEach((project) => {
-  project.addEventListener("mouseover", (e) => {
-    projectDescDiv.innerHTML = "";
-    const projectName = e.currentTarget.id;
-    projectDescDiv.insertAdjacentHTML("beforeend", `<h3>${projectName}</h3>`);
-  });
-  project.addEventListener("mouseout", (e) => {
-    projectDescDiv.innerHTML = ""; // Clear the content or set it back to default
-  });
-});

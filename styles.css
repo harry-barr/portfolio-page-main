@@ -203,7 +203,7 @@ html {
 .gallery div {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 30px;
   padding: 50px;
   flex: none;
@@ -245,6 +245,9 @@ html {
   border: 5px solid purple;
   border-radius: 10px;
   box-shadow: 0 0 20px purple;
+}
+.project-desc {
+  pointer-events: none;
 }
 
 .project-desc h3 {
